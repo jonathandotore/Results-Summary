@@ -13,10 +13,9 @@
     --main-color-circle: hsl(249, 72%, 52%);
     --main-text-color: hsl(0, 0%, 99%);
     --secundary-text-color: hsla(0, 0%, 84%, 0.8);
-
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 374.98px) and (max-width: 767.9px) {
 
     /* Score */
 
@@ -161,3 +160,164 @@
     }
 }
 
+@media (min-width: 768px) {
+
+    /* Score */
+    div.score {
+        width: 25%;
+        height: 65%;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+        background: rgb(71,52,240);
+        background: linear-gradient(rgba(71,52,240,1) 0%, );
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+    }
+
+    p.your-result {
+        text-align: center;
+        color: var(--secundary-text-color);
+        padding: 25px 0 20px 0;
+        font-size: 1.3em;
+    }
+
+    .score-number {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        padding: 10px 0;
+        background: rgb(71,52,240);
+        background: linear-gradient(0deg, rgba(71,52,240,1) 0%, rgba(75,36,205,1) 93%);
+        border: 1px transparent var(--main-color-circle);
+        border-radius: 50%;
+    }
+
+    .score-value {
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    .score-number p {
+        font-size: 4rem;
+        font-weight: 800;
+        color: var(--main-text-color);
+    }
+
+    .score-sub-value {
+        display: block;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--secundary-text-color);
+        padding-bottom: 35px;
+        
+    }
+
+    .congrats {
+        color: var(--main-text-color);
+        text-align: center;
+        font-size: 2rem;
+        margin: 25px 0 10px 0;
+    }
+
+    .message {
+        width: 75%;
+        margin: 0 auto;
+        padding: 20px 0 0px 0;
+        color: var(--secundary-text-color);
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+    /* Summary */
+
+    .summary {
+        width: 30%;
+        height: 65%;
+        padding: 20px;
+        position: absolute;
+        top: 20%;
+        left: 42%;
+        /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+        box-shadow: 0 0 30px #cccccc74;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .summary h4 {
+        font-weight: 700;
+        margin: 1rem 0 2rem 4rem;
+        font-size: 1.4rem;
+    }
+
+    .summs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .sum-item {
+        padding: 20px;
+        margin: 0 0 1rem 4rem;
+        border: 1px transparent;
+        border-radius: 10px;
+    }
+
+    svg {
+        float: left;
+        margin-right: 8px;
+    }
+
+    .key {
+        float: left;
+    }
+    
+    .value {
+        float: right;
+        color: #000;
+    }
+
+    .summary-reaction {
+        background-color: rgba(255,246,245,255);
+        color: #e70000;
+    }
+
+    .summary-memory {
+        background-color: rgba(255,251,242,255);
+        color: #fac156;
+    }
+
+    .summary-verbal {
+        background-color: rgba(242,251,250,255);
+        color: #31ab8b;
+    }
+
+    .summary-visual {
+        background-color: rgba(243,243,253,255);
+        color: #141f9c;
+    }
+
+    input {
+        margin: 0.5rem 1rem 0.5rem 6rem;
+        background: rgba(48,59,89,255);
+        color: var(--main-text-color);
+        width: 70%;
+        line-height: 2;
+        padding: 0.6rem;
+        border-radius: 30px;
+        border: 1px transparent;
+        font-size: 1.1rem;
+    }
+
+    input:hover {
+        cursor: pointer;
+        background: rgb(248,251,255);
+        background: linear-gradient(0deg, rgba(248,251,255,1) 0%, rgba(60,58,195,1) 2%, rgba(97,72,209,1) 100%);
+    }
+}

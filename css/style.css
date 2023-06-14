@@ -9,10 +9,18 @@
 }
 
 :root {
-    --main-color: hsl(247, 91%, 59%);
-    --main-color-circle: hsl(249, 72%, 52%);
-    --main-text-color: hsl(0, 0%, 99%);
-    --secundary-text-color: hsla(0, 0%, 84%, 0.8);
+    --bg-light-slate-blue: hsl(252, 100%, 67%);
+    --bg-light-royal-blue: hsl(241, 81%, 54%);
+    --cr-violet-blue: hsla(256, 72%, 46%, 1);
+    --cr-persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    -dark-grey-blue: hsl(224, 30%, 27%);
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
 }
 
 @media (min-width: 374.98px) and (max-width: 767.9px) {
@@ -170,8 +178,8 @@
         top: 20%;
         left: 20%;
         z-index: 1;
-        background: rgb(71,52,240);
-        background: linear-gradient(rgba(71,52,240,1) 0%, );
+        background: hsl(252, 100%, 67%);
+        background: linear-gradient(0deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
         border-top-right-radius: 35px;

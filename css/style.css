@@ -12,11 +12,14 @@
     --main-color: hsl(247, 91%, 59%);
     --main-color-circle: hsl(249, 72%, 52%);
     --main-text-color: hsl(0, 0%, 99%);
-    --secundary-text-color: hsl(0, 0%, 71%);
+    --secundary-text-color: hsla(0, 0%, 84%, 0.8);
 
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
+
+    /* Score */
+
     section #main {
         display: flex;
         width: 100vw;
@@ -24,38 +27,137 @@
     }
 
     div.score {
-
         width: 100%;
         margin: 0 auto;
-        background-color: var(--main-color);
+        background: rgb(71,52,240);
+        background: linear-gradient(rgba(71,52,240,1) 0%, );
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
     }
 
-    .score p {
+    p.your-result {
         text-align: center;
-        margin: 20px;
         color: var(--secundary-text-color);
+        padding: 10px 0 20px 0;
     }
 
     .score-number {
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
         margin: 0 auto;
-        border: 1px solid #c3c3c3;
+        padding: 10px 0;
+        background: rgb(71,52,240);
+        background: linear-gradient(0deg, rgba(71,52,240,1) 0%, rgba(75,36,205,1) 93%);
+        border: 1px transparent var(--main-color-circle);
         border-radius: 50%;
-        
-    
+    }
+
+    .score-value {
+        text-align: center;
+        padding: 10px 0 0 0;
     }
 
     .score-number p {
         font-size: 2.7rem;
         font-weight: 800;
+        color: var(--main-text-color);
     }
 
-    .score-number span {
-        
+    .score-sub-value {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 700;
         text-align: center;
-        font-size: 0.8rem;
-        font-weight: 500;
+        color: var(--secundary-text-color);
+        padding-bottom: 35px;
+        
     }
 
+    .congrats {
+        color: var(--main-text-color);
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 15px 0 10px 0;
+    }
+
+    .message {
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px 0 30px 0;
+        color: var(--secundary-text-color)
+    }
+
+
+    /* Summary */
+    .summary {
+        padding: 20px;
+    }
+
+    .summary h4 {
+        font-weight: 700;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .summs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+
+    .sum-item {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px transparent;
+        border-radius: 10px;
+    }
+
+    svg {
+        float: left;
+        margin-right: 8px;
+    }
+
+    .key {
+        float: left;
+    }
+    
+    .value {
+        float: right;
+        color: #000;
+    }
+
+    .summary-reaction {
+        background-color: rgba(255,246,245,255);
+        color: #e70000;
+    }
+
+    .summary-memory {
+        background-color: rgba(255,251,242,255);
+        color: #fac156;
+    }
+
+    .summary-verbal {
+        background-color: rgba(242,251,250,255);
+        color: #31ab8b;
+    }
+
+    .summary-visual {
+        background-color: rgba(243,243,253,255);
+        color: #141f9c;
+    }
+
+    input {
+        margin-top: 10px;
+        background: rgba(48,59,89,255);
+        color: var(--main-text-color);
+        width: 100%;
+        padding: 15px;
+        border-radius: 30px;
+        border: 1px transparent;
+        font-size: 1.1rem;
+    }
 }
+

@@ -179,7 +179,7 @@
         left: 20%;
         z-index: 1;
         background: hsl(252, 100%, 67%);
-        background: linear-gradient(0deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
         border-top-right-radius: 35px;
@@ -188,7 +188,7 @@
 
     p.your-result {
         text-align: center;
-        color: var(--secundary-text-color);
+        color: var(--light-lavender);
         padding: 25px 0 20px 0;
         font-size: 1.3em;
     }
@@ -198,9 +198,9 @@
         height: 200px;
         margin: 0 auto;
         padding: 10px 0;
-        background: rgb(71,52,240);
-        background: linear-gradient(0deg, rgba(71,52,240,1) 0%, rgba(75,36,205,1) 93%);
-        border: 1px transparent var(--main-color-circle);
+        
+        background: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+        border: 1px transparent;
         border-radius: 50%;
     }
 
@@ -212,7 +212,7 @@
     .score-number p {
         font-size: 4rem;
         font-weight: 800;
-        color: var(--main-text-color);
+        color: var(--white);
     }
 
     .score-sub-value {
@@ -220,13 +220,13 @@
         font-size: 1rem;
         font-weight: 700;
         text-align: center;
-        color: var(--secundary-text-color);
+        color: var(--light-lavender);
         padding-bottom: 35px;
         
     }
 
     .congrats {
-        color: var(--main-text-color);
+        color: var(--white);
         text-align: center;
         font-size: 2rem;
         margin: 25px 0 10px 0;
@@ -236,7 +236,7 @@
         width: 75%;
         margin: 0 auto;
         padding: 20px 0 0px 0;
-        color: var(--secundary-text-color);
+        color: var(--light-lavender);
         text-align: center;
         font-size: 1.2rem;
     }
@@ -292,29 +292,29 @@
     }
 
     .summary-reaction {
-        background-color: rgba(255,246,245,255);
-        color: #e70000;
+        background-color: rgba(255, 246, 245, 255);
+        color: hsl(0, 100%, 67%);
     }
 
     .summary-memory {
-        background-color: rgba(255,251,242,255);
-        color: #fac156;
+        background-color: rgba(255, 251, 242, 255);
+        color: hsl(39, 94%, 66%);
     }
 
     .summary-verbal {
-        background-color: rgba(242,251,250,255);
-        color: #31ab8b;
+        background-color: rgba(242, 251, 250, 255);
+        color: hsl(164, 55%, 43%);
     }
 
     .summary-visual {
-        background-color: rgba(243,243,253,255);
-        color: #141f9c;
+        background-color: rgba(243, 243, 253, 255);
+        color: hsl(235, 77%, 35%);
     }
 
     input {
         margin: 0.5rem 1rem 0.5rem 6rem;
         background: rgba(48,59,89,255);
-        color: var(--main-text-color);
+        color: var(--white);
         width: 70%;
         line-height: 2;
         padding: 0.6rem;
@@ -326,6 +326,6 @@
     input:hover {
         cursor: pointer;
         background: rgb(248,251,255);
-        background: linear-gradient(0deg, rgba(248,251,255,1) 0%, rgba(60,58,195,1) 2%, rgba(97,72,209,1) 100%);
+        background: linear-gradient(0deg, hsl(214, 100%, 99%) 0%, hsl(241, 54%, 50%) 2%, rgba(97,72,209,1) 100%);
     }
 }
